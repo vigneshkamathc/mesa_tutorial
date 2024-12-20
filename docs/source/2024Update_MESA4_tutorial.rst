@@ -1,7 +1,7 @@
+.. contents:: **Table of Contents**
+
 Sensitivity Mapping with MESA
 =============================
-
-.. contents:: **Table of Contents**
 
 MESA 4.0 is open source and free for anyone to use. It is based on the
 Python coding language, but you do not need to be a coder to use the
