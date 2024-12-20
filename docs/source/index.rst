@@ -7,5 +7,6 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
 
 2024Update_MESA4_tutorial
