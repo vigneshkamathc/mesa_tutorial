@@ -1,7 +1,7 @@
-Welcome to the MESA documentation
+Mapping Environmentally Sensitive Assets (MESA) tutorial
 ==========================================================
 
-Documentation to the MESA tools developed by UNEP-WCMC:
+A guide to using the MESA tool developed by UNEP-WCMC:
 
 Contents
 --------
