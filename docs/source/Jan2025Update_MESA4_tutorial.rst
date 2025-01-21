@@ -198,12 +198,9 @@ columns (see example below):
 
 |image12|
 
-8. Click ‘Save to GeoPackage’, then Exit. You can also save it as an
-    Excel file if needed using the ‘Save to Excel’ button.
+8. Click ‘Save to GeoPackage’, then Exit. You can also save it as an Excel file if needed using the ‘Save to Excel’ button.
 
-9. Return to the home user interface again. It will now indicate that
-    the setup is ok, but you can go back to adjust it any time if
-    needed.
+9. Return to the home user interface again. It will now indicate that the setup is ok, but you can go back to adjust it any time if needed.
 
 |image13|
 
@@ -314,11 +311,7 @@ Inside, you will find a QGIS project file called ‘mesa’.
 
 |image19|
 
-2. 
-
-3. 
-
-4. Open the mesa QGIS project by double clicking on it. This will open
+2. Open the mesa QGIS project by double clicking on it. This will open
    QGIS (as long as you have QGIS installed on your computer)
 
 If you have not run all sections in the MESA tool, for example the
@@ -791,7 +784,7 @@ mesa — tbl_asset_group
 ----------------------------------
 
 Table listing metadata from each asset and grid level involved in the
-process. The bounding box for each layer is extracted as its geometry.\|image36|
+process. The bounding box for each layer is extracted as its geometry./|image36|
 
 +-----------------------------------+----------------------------------+
 | **Attribute name**                | **Description**                  |
@@ -849,52 +842,11 @@ layers.
 |                         | asset object                               |
 +-------------------------+--------------------------------------------+
 
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
-|                        |                                             |
-+------------------------+---------------------------------------------+
 
-|image37|\ mesa — tbl_atlas
+mesa — tbl_atlas
 ---------------------------
 
-This table contains geometries used to create an atlas in the QGIS
+|image37|\ This table contains geometries used to create an atlas in the QGIS
 project file.
 
 +-------------------------+--------------------------------------------+
