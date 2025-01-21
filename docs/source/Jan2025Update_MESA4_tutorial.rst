@@ -39,11 +39,9 @@ The download comes with example data which we will use in this tutorial.
 Download and unzip the file. You will then see the below folder
 structure (See Annex III for description of the folder structure):
 
-- 
 
 |image1|
 
-- 
 
 MESA 4.3– step by step tutorial
 ===============================
@@ -138,14 +136,10 @@ the analysis.
 
 |image5|
 
-2. 
-
-3. 
-
-4. Click on the ‘Import’ button. This will open a new window. It may
+2. Click on the ‘Import’ button. This will open a new window. It may
    take some time to open.
 
-5. Click the ‘Import assets’ button. This will import the assets we
+3. Click the ‘Import assets’ button. This will import the assets we
    saved in the ‘assets’ folder earlier.
 
 ..
@@ -160,25 +154,25 @@ also be displayed in the Log Output box.
 
 |image7|
 
-6. Import your geocodes by clicking the ‘Import geocodes’ button.
+4. Import your geocodes by clicking the ‘Import geocodes’ button.
 
 |image8|
 
 See section 4 below for details on the ‘Import lines’ function. You can
 ignore it for this part of the tutorial.
 
-7. Click Exit to return to the main user interface. It will now show how
+5. Click Exit to return to the main user interface. It will now show how
    many asset and geocode layers you have imported.
 
 |image9|
 
-8. Click the ‘Set up’ button to input the importance and susceptibility
+6. Click the ‘Set up’ button to input the importance and susceptibility
    scores. This will open a new window with a separate line for each of
    your asset datasets.
 
 |image10|
 
-9. In this window, input your importance and susceptibility scores,
+7. In this window, input your importance and susceptibility scores,
    which should be decided in collaboration with relevant stakeholders.
    However, in this tutorial, to save time, we have created hypothetical
    scores. Please note that this is for demonstration purposes only and
@@ -204,24 +198,24 @@ columns (see example below):
 
 |image12|
 
-10. Click ‘Save to GeoPackage’, then Exit. You can also save it as an
+8. Click ‘Save to GeoPackage’, then Exit. You can also save it as an
     Excel file if needed using the ‘Save to Excel’ button.
 
-11. Return to the home user interface again. It will now indicate that
+9. Return to the home user interface again. It will now indicate that
     the setup is ok, but you can go back to adjust it any time if
     needed.
 
 |image13|
 
-12. Click the ‘Process’ button. This will open a new window where the
+10. Click the ‘Process’ button. This will open a new window where the
     tool will combine the asset data, geocode grids and the sensitivity
     values to produce the output.
 
-13. Click ‘Process’.
+11. Click ‘Process’.
 
 |image14|
 
-14. This step may take some time to run. Once the process is complete,
+12. This step may take some time to run. Once the process is complete,
     the progress bar will reach 100% and it will display a COMPLETED
     notification.
 
@@ -231,18 +225,18 @@ The results will be saved in a geopackage file in the Output folder. You
 can view them in your chosen GIS software (e.g. QGIS or ArcGIS). See
 Annex II for more information on the output files.
 
-15. Once the processing is complete, click the ‘Exit’ button to close
+13. Once the processing is complete, click the ‘Exit’ button to close
     the window.
 
-16. Return to the main user interface. It will now show you that the
+14. Return to the main user interface. It will now show you that the
     processing is complete.
 
 |image16|
 
-17. The final step is to produce your atlas. Click the ‘Atlas’ button.
+15. The final step is to produce your atlas. Click the ‘Atlas’ button.
     This will open another new window.
 
-18. Click ‘Create’. This will add your output files to a QGIS project.
+16. Click ‘Create’. This will add your output files to a QGIS project.
 
 |image17|
 
@@ -291,14 +285,6 @@ Annex II\ **.**
 |                                         | from the interaction of    |
 |                                         | each input asset with any  |
 |                                         | grid cell                  |
-+-----------------------------------------+----------------------------+
-|                                         |                            |
-+-----------------------------------------+----------------------------+
-|                                         |                            |
-+-----------------------------------------+----------------------------+
-|                                         |                            |
-+-----------------------------------------+----------------------------+
-|                                         |                            |
 +-----------------------------------------+----------------------------+
 | **mesa —** **tbl_asset_group_issue**    | Table containing original  |
 |                                         | layers that need to be     |
@@ -396,28 +382,19 @@ let you know in the Log Output box.
 4. Now click the ‘Segments’ button. This will open a new window.
 
 |image33|
-
-5. 
-
-6. 
-
-7. Click the ‘Process segments’ button. Once it has completed, it will
+ 
+5. Click the ‘Process segments’ button. Once it has completed, it will
    notify you in the Log Output box. Once finished, close the box by
    clicking the ‘Exit’ button.
 
-|image34|
+|image34| 
 
-8. 
-
-9. Reopen your Mesa QGIS project file. The newly processed lines should
+6. Reopen your Mesa QGIS project file. The newly processed lines should
    be added. If they are not, try creating a new atlas (in the same way
    as described above)
 
-..
-
    |image35|
 
-#. 
 
 Annex I: Data standards
 =======================
@@ -810,11 +787,11 @@ These datasets are not added to the output geopackage file.
 |                         | asset object                               |
 +-------------------------+--------------------------------------------+
 
-mesa — |image36|\ tbl_asset_group 
+mesa — tbl_asset_group 
 ----------------------------------
 
 Table listing metadata from each asset and grid level involved in the
-process. The bounding box for each layer is extracted as its geometry.
+process. The bounding box for each layer is extracted as its geometry.\|image36|
 
 +-----------------------------------+----------------------------------+
 | **Attribute name**                | **Description**                  |
