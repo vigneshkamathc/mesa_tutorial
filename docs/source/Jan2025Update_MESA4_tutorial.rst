@@ -1,7 +1,3 @@
-.. contents:: **Table of Contents**
-   toc: true
-
-
 Sensitivity Mapping with MESA
 =============================
 
