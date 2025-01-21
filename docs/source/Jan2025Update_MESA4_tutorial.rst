@@ -26,7 +26,7 @@ Citation
 License
 =======
 
-Creative Commons Attribution 4.0 International
+Creative Commons Attribution 4.0 International (`CC BY 4.0 <https://creativecommons.org/licenses/by/4.0/deed.en>`_).
 
 Initial setup
 =============
@@ -783,8 +783,11 @@ These datasets are not added to the output geopackage file.
 mesa — tbl_asset_group 
 ----------------------------------
 
-|image36| Table listing metadata from each asset and grid level involved in the
+|image36| 
+
+Table listing metadata from each asset and grid level involved in the
 process. The bounding box for each layer is extracted as its geometry.
+
 +-----------------------------------+----------------------------------+
 | **Attribute name**                | **Description**                  |
 +===================================+==================================+
@@ -845,7 +848,9 @@ layers.
 mesa — tbl_atlas
 ---------------------------
 
-|image37|\ This table contains geometries used to create an atlas in the QGIS
+|image37|
+
+This table contains geometries used to create an atlas in the QGIS
 project file.
 
 +-------------------------+--------------------------------------------+
@@ -873,10 +878,12 @@ project file.
 mesa — tbl_flat
 --------------------------
 
+|image38|
+
 This table contains all intersected geocodes at all levels. Data on
 importance, susceptibility and sensitivity (code and value) have been
 added.
-|image38|
+
 
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
@@ -954,7 +961,9 @@ box for each group is extracted as its geometry.
 mesa — tbl_geocode_object 
 -------------------------------------
 
-|image40|\ Table containing all the processed geocodes that were placed in the
+|image40|
+
+Table containing all the processed geocodes that were placed in the
 geocode folder.
 
 +-------------------------+--------------------------------------------+
@@ -972,7 +981,9 @@ geocode folder.
 mesa — tbl_stacked
 -----------------------------
 
-|image41|\ This table contains all the interaction data between each geocode cell
+|image41|
+
+This table contains all the interaction data between each geocode cell
 and asset. Each row shows a geocode cell and asset interaction.
 
 +-------------------------+--------------------------------------------+
