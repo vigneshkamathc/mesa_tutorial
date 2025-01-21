@@ -1,5 +1,5 @@
 .. contents:: **Table of Contents**
-   :depth: 2
+
 
 Sensitivity Mapping with MESA
 =============================
