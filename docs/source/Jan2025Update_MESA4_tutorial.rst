@@ -316,9 +316,13 @@ geocodes you have included in your analysis.
 
 |image23|\ |image24|
 
+*The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
+
 You can also view your original input data, among other layers.
 
 |image25|\ |image26|
+
+*The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
 
 You can get more detailed information if you select one of the geocode
 cells in the sensitivity layer. For example, you can see which
@@ -1118,7 +1122,6 @@ The MESA folder structure:
 .. |image21| image:: media/image33.png
    :width: 6.26806in
    :height: 3.33889in
-   :alt: The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.
 .. |image22| image:: media/image34.png
    :width: 2.83049in
    :height: 1.76469in
@@ -1180,6 +1183,7 @@ The MESA folder structure:
    :width: 2.21181in
    :height: 1.17986in
 .. |image64| image:: media/image64.png
+   :width: 5.90551in
 .. |image65| image:: media/image65.png
 .. |image66| image:: media/image66.png
 .. |image67| image:: media/image67.png
