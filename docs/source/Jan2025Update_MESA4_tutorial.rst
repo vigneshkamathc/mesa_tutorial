@@ -223,7 +223,7 @@ Annex B for more information on the output files.
 You will now be able to view your outputs in a QGIS project. See below
 for how to do this.
 
-The key output is a geopackage,[2]_ which contains seven produced
+The key output is a geopackage,[1]_ which contains seven produced
 tables as well as additional tables corresponding to the number of input
 asset layers (see Table 2). These tables can be queried using QGIS or
 ArcGIS.
@@ -389,6 +389,7 @@ The MESA tool will divide the lines you have imported into segments and buffer t
 4. Press the ‘Next’ button to scroll through the different lines that you imported. Change the segment length and width as needed and select ‘Save’. Below on the left, you can see what changing the segment length to 10000m and width to 5000m looks like in comparison to the default length/width on the right.  
 
 |image67|\ |image68|
+
 *The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
 
 Annex A: Data standards
@@ -477,12 +478,12 @@ area data.*
 +-----------------+----------+------------+------------------------------------------+
 | GOV_TYPE        | Text     | 254        | **Allowed values**: Federal or national  |
 |                 | (String) |            | ministry or agency, Sub-national         |
-|                 |          |            | ministry or agency, Government-delegated|
+|                 |          |            | ministry or agency, Government-delegated |
 |                 |          |            | management, Transboundary governance,    |
 |                 |          |            | Collaborative governance, Joint          |
 |                 |          |            | governance, Individual landowners,       |
 |                 |          |            | Non-profit organisations, For-profit     |
-|                 |          |            | organisations, Indigenous peoples, Local|
+|                 |          |            | organisations, Indigenous peoples, Local |
 |                 |          |            | communities, Not Reported                |
 +-----------------+----------+------------+------------------------------------------+
 | MANG_AUTH       | Text     | 254        | Individual or group that manages the     |
@@ -538,7 +539,7 @@ Biodiversity Designations data.*
 |                     | (String)   |            | country where the PA is located                         |
 +---------------------+------------+------------+---------------------------------------------------------+
 | ISO3                | Text       | 20         | **Allowed values**: ISO3166-3 character code of         |
-|                     | (String)   |            | country or territory where the PA is located           |
+|                     | (String)   |            | country or territory where the PA is located            |
 +---------------------+------------+------------+---------------------------------------------------------+
 Habitats
 ~~~~~~~~
@@ -711,6 +712,7 @@ List of the input asset data, with one table per input asset layer (Table B1).
 These datasets are not added to the output geopackage file.
 
 *Table B1. Description of attributes of mesa – tbl_asset layer_[layer number]*
+
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -739,6 +741,7 @@ Table B2 lists from each asset and grid level involved in the
 process. The bounding box for each layer is extracted as its geometry.
 
 *Table B2. Description of attributes of mesa — tbl_asset_group*
+
 +-----------------------------------+----------------------------------+
 | **Attribute name**                | **Description**                  |
 +===================================+==================================+
@@ -777,6 +780,7 @@ Table B3 contains a list of all spatial objects from the input asset
 layers.
 
 *Table B3. Description of attributes of mesa — tbl_asset_object*
+
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -805,6 +809,7 @@ Table B4 contains geometries used to create an atlas in the QGIS
 project file.
 
 *Table B4. Description of attributes of mesa — tbl_atlas*
+
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -837,6 +842,7 @@ importance, susceptibility and sensitivity (code and value) have been
 added.
 
 *Table B5. Description of attributes of mesa — tbl_flat*
+
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -897,6 +903,7 @@ Table B6 contains all the unique geocode group names and ID. The bounding
 box for each group is extracted as its geometry.
 
 *Table B6. Description of attributes of mesa — tbl_geocode_group*
+
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -920,6 +927,7 @@ Table B7 contains all the processed geocodes that were placed in the
 geocode folder.
 
 *Table B7. Description of attributes of mesa — tbl_geocode_object*
+
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -941,6 +949,7 @@ Table B8 contains all the interaction data between each geocode cell
 and asset. Each row shows a geocode cell and asset interaction.
 
 *Table B8. Description of attributes of mesa — tbl_stacked*
+
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -994,6 +1003,7 @@ Table B9 contains original layers that need to be fixed by the user. All
 the elements in this table have been skipped in the calculations.
 
 *Table B9. Description of attributes of mesa — tbl_asset_group_issue*
+
 +------------------------+---------------------------------------------+
 | **Attribute name**     | **Description**                             |
 +========================+=============================================+
@@ -1039,10 +1049,6 @@ The MESA folder structure:
 - mesa: The MESA application executable file
 
 .. [1]
-   National QDGC spatial grids are available for download at
-   https://github.com/miljodir/mesa.
-
-.. [2]
    As defined by the Open Geospatial Consortium. More information is
    available at: https://www.geopackage.org/.
 
