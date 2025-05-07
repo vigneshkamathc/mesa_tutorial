@@ -1118,7 +1118,7 @@ The MESA folder structure:
 .. |image21| image:: media/image33.png
    :width: 6.26806in
    :height: 3.33889in
-   :alt: *The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
+   :alt: The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.
 .. |image22| image:: media/image34.png
    :width: 2.83049in
    :height: 1.76469in
