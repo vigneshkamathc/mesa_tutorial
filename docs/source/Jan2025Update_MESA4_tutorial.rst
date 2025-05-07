@@ -587,7 +587,7 @@ Species datasets vary depending upon the level of study that has been conducted.
 *Table A4: Description and allowed values for attributes of species
 data.*
 
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 | **Field Name**  | **Type**   | **Length**  | **Allowed Values**                      |
 +=================+============+=============+=========================================+
 | SPECIES         | Text       | 100         | Name of species                         |
@@ -618,11 +618,11 @@ data.*
 +-----------------+------------+=============+-----------------------------------------+
 | PARENT_ISO3     | Text       | 20          | **Allowed values**: SIO 3166-3          |
 |                 | (String)   |             | character code of country where the PA  |
-|                 |            |             | is located.                             |
+|                 |            |             | is located                              |
 +-----------------+------------+=============+-----------------------------------------+
 | ISO3            | Text       | 20          | **Allowed values**: ISO3166-3 character |
 |                 | (String)   |             | code of country or territory where the  |
-|                 |            |             | PA is located.                          |
+|                 |            |             | PA is located                           |
 +-----------------+------------+=============+-----------------------------------------+
 | OTHER           | Text       | 254         | Additional relevant information         |
 |                 | (String)   |             | specific to the species                 |
@@ -1175,3 +1175,8 @@ The MESA folder structure:
 .. |image41| image:: media/image59.png
    :width: 2.21181in
    :height: 1.17986in
+.. |image64| image:: media/image64.png
+.. |image65| image:: media/image65.png
+.. |image66| image:: media/image66.png
+.. |image67| image:: media/image67.png
+.. |image68| image:: media/image68.png
