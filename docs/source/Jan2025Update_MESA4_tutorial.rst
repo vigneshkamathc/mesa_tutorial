@@ -1185,6 +1185,8 @@ The MESA folder structure:
 .. |image64| image:: media/image64.png
    :width: 5.90551in
 .. |image65| image:: media/image65.png
+   :width: 5.90551in
 .. |image66| image:: media/image66.png
+   :width: 5.90551in
 .. |image67| image:: media/image67.png
 .. |image68| image:: media/image68.png
