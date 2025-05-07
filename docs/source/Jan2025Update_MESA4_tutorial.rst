@@ -306,6 +306,7 @@ example below (if you are not using the training data you may need to
 zoom into your area of interest).
 
 |image21|
+
 *The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
 
 In the Layers panel on the left-hand side, you can select the different
@@ -337,6 +338,7 @@ It also only considers asset data that fall within a buffer distance of
 your choice.
 
 |image28|\ |image29|
+
 *The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
 
 1. Add your line data to the ‘lines’ folder within the ‘input’ folder.
@@ -370,6 +372,7 @@ let you know in the Log Output box.
    as described above).
 
    |image35|
+
 *The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
 
 The MESA tool will divide the lines you have imported into segments and buffer them. The default is set to segment lengths of 1000m and a buffer width of 600m. You can change this if needed by following these steps. 
@@ -592,41 +595,41 @@ data.*
 +=================+============+=============+=========================================+
 | SPECIES         | Text       | 100         | Name of species                         |
 |                 | (String)   |             |                                         |
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 | IUCN_STATUS     | Text       | 20          | **Allowed values**: CR, EN, VU, NT, LC, |
 |                 | (String)   |             | DD, NE                                  |
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 | NAT_STATUS      | Text       | 100         | Status under national assessment or     |
 |                 | (String)   |             | legislation                             |
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 | TYPE            | Text       | 20          | **Allowed values**: F (Feeding Ground), |
 |                 | (String)   |             | B (Breeding Ground), M (Migratory       |
 |                 |            |             | Route), O (Multiple use or Other)       |
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 | HABITAT         | Text       | 254         | Species habitat preference if known.    |
 |                 | (String)   |             |                                         |
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 | MARINE          | Text       | 20          | **Allowed values**: 0 (100%             |
 |                 | (String)   |             | Terrestrial), 1 (Coastal: marine and    |
 |                 |            |             | terrestrial), 2 (100% Marine)           |
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 | REP_M_AREA      | Number     | N/A         | Marine area in square kilometres        |
 |                 | (Double)   |             |                                         |
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 | REP_AREA        | Number     | N/A         | Area in square kilometres               |
 |                 | (Double)   |             |                                         |
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 | PARENT_ISO3     | Text       | 20          | **Allowed values**: SIO 3166-3          |
 |                 | (String)   |             | character code of country where the PA  |
 |                 |            |             | is located                              |
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 | ISO3            | Text       | 20          | **Allowed values**: ISO3166-3 character |
 |                 | (String)   |             | code of country or territory where the  |
 |                 |            |             | PA is located                           |
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 | OTHER           | Text       | 254         | Additional relevant information         |
 |                 | (String)   |             | specific to the species                 |
-+-----------------+------------+=============+-----------------------------------------+
++-----------------+------------+-------------+-----------------------------------------+
 
 Metadata standards
 ------------------
@@ -1115,6 +1118,7 @@ The MESA folder structure:
 .. |image21| image:: media/image33.png
    :width: 6.26806in
    :height: 3.33889in
+   :alt: *The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
 .. |image22| image:: media/image34.png
    :width: 2.83049in
    :height: 1.76469in
