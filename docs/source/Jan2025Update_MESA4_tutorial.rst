@@ -1,17 +1,7 @@
 Sensitivity Mapping with MESA
 =============================
 
-The Mapping Environmentally Sensitive Assets (MESA) tool is intended for
-a broad audience of individuals working on the development and use of
-environmental sensitivity maps in various contexts. It provides a
-step-by-step protocol for developing an environmental sensitivity atlas
-based on a standardized methodology that was developed following a
-review of multiple existing methods. MESA 4.3 is based on the Python
-coding language, but you do not need to be a coder to use the tool. It
-is compiled into an easy-to-use open source windows application. It can
-be applied for a variety of intended uses (e.g. strategic planning,
-project management and emergency response) and includes context-specific
-considerations to be made during the mapping process.
+The Mapping Environmentally Sensitive Assets (MESA) tool is designed for a broad audience involved in developing and using environmental sensitivity maps in various contexts. It provides a step-by-step protocol for creating an environmental sensitivity atlas using a standardized methodology developed after reviewing multiple existing methods. MESA 4.3 is based on the Python coding language. However, you do not need to be a coder to use the tool. It is compiled into an easy-to-use, open-source Windows application. The tool can be applied to a variety of purposes such as strategic planning, project management and emergency response. It also includes context-specific considerations to be made during the mapping process. 
 
 Citation
 ========
@@ -35,7 +25,7 @@ https://zenodo.org/communities/mesatool/records?q=&l=list&p=1&s=10&sort=newest
 The download comes with example data which we will use in this tutorial.
 
 Download and unzip the file. You will then see the below folder
-structure (See Annex III for description of the folder structure):
+structure (See Annex C for description of the folder structure):
 
 
 |image1|
@@ -62,7 +52,7 @@ means you do not need to do this manually beforehand.
 1.2 Preparing asset data
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-All of your input asset data must be copied into the ‘asset’ folder
+All your input asset data must be copied into the ‘asset’ folder
 within the ‘input’ folder. This is where the MESA tool reads your asset
 data from.
 
@@ -82,17 +72,14 @@ distinguish it from other similar files.
 
 Your data can be arranged into subfolders (as shown above) or placed all
 in the same folder, depending on your preference. The data can be in
-shapefile or geopackage format, or a combination of both.
-
-Please note, however, individual assets must be separated into
-individual datasets, as each dataset will be treated uniformly.
+shapefile or geopackage format, or a combination of both. However, individual assets must be separated into their own datasets, as each dataset is treated uniformly. 
 Therefore, you can only assign a single sensitivity ranking per dataset.
 For example, protected areas may require multiple sensitivity rankings
 based on the legal importance associated with their designation (e.g.
 National Park vs Forest Reserve). In such cases, the dataset should be
 split into multiple files.
 
-2. Copy your geocode data into the ‘geocode’ folder. Again, if you are
+2. Copy your geocode data into the ‘geocode’ folder. If you are
    using the test data, it will already be in the folder. Your ‘geocode’
    folder should look like this:
 
@@ -108,9 +95,9 @@ https://zenodo.org/communities/qdgc/records?q=&l=list&p=1&s=10&sort=newest
 
 Quarter Degree Grid Cells have global coverage and enables the use of
 differently sized grid cells. Spatial grids for use at national level
-have been developed [1]_ with grid cells ranging from 55 x 55 km (Level
+have been developed with grid cells ranging from 55 x 55 km (Level
 1) to 850 x 850 m (Level 7). Smaller grid cells can be used to produce a
-sensitivity atlas of a smaller area of focus if required.
+sensitivity atlas of a smaller area of focus if required. National QDGC spatial grids are available for download at https://github.com/miljodir/mesa.
 
 You can run the MESA tool with all levels if you wish, but this may
 increase processing time. You can instead choose only the levels that
@@ -128,9 +115,9 @@ ready to run the tool.
 
 |image4|
 
-A window like the one below should open, which may take a few seconds to
+A window like the one below should open. It may take a few seconds to
 load. This is the user interface of the MESA tool, where you will run
-the analysis.
+your analysis.
 
 |image5|
 
@@ -144,11 +131,9 @@ the analysis.
 
    |image6|
 
-You will see a progress bar, and once the process is completed, a
-notification will appear in the Log Output box. This may take some time
-to complete, depending on the amount of asset data you have and the
-processing power of your computer. If there are any errors, it will tell
-also be displayed in the Log Output box.
+You will see a progress bar. Once the process is complete, a
+notification will appear in the Log Output box. This may take some time, depending on the amount of asset data and the
+processing power of your computer. If any errors occur, they will also be displayed in the Log Output box. 
 
 |image7|
 
@@ -218,7 +203,7 @@ columns (see example below):
 
 The results will be saved in a geopackage file in the Output folder. You
 can view them in your chosen GIS software (e.g. QGIS or ArcGIS). See
-Annex II for more information on the output files.
+Annex B for more information on the output files.
 
 13. Once the processing is complete, click the ‘Exit’ button to close
     the window.
@@ -238,7 +223,7 @@ Annex II for more information on the output files.
 You will now be able to view your outputs in a QGIS project. See below
 for how to do this.
 
-The key output is a geopackage [2]_, which contains seven produced
+The key output is a geopackage,[2]_ which contains seven produced
 tables as well as additional tables corresponding to the number of input
 asset layers (see Table 2). These tables can be queried using QGIS or
 ArcGIS.
@@ -247,8 +232,8 @@ If you have included multiple geocode grids, you will need to filter the
 outputs to a single geocode level. This is done for you in the QGIS
 project.
 
-For more information on the tables and their attributes, please refer to
-Annex II\ **.**
+For more information on the tables and their attributes, refer to
+Annex B\ **.**
 
 *Table 2: List of output tables from the sensitivity processing.*
 
@@ -312,9 +297,7 @@ Inside, you will find a QGIS project file called ‘mesa’.
 2. Open the mesa QGIS project by double clicking on it. This will open
    QGIS (as long as you have QGIS installed on your computer)
 
-If you have not run all sections in the MESA tool, for example the
-segments section, you may get a pop up saying there are some unavailable
-layers. This is ok, just click on the ‘Keep Unavailable Layers’ button.
+If you have not run all sections in the MESA tool, for example the segments section, you may see a pop up indicating that some layers are unavailable. This is expected. Simply click on the ‘Keep Unavailable Layers’ button. 
 
 |image20|
 
@@ -323,6 +306,7 @@ example below (if you are not using the training data you may need to
 zoom into your area of interest).
 
 |image21|
+*The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
 
 In the Layers panel on the left-hand side, you can select the different
 geocodes you have included in your analysis.
@@ -348,11 +332,12 @@ In addition to running your analysis with geocodes, the MESA tool also
 has the functionality to use lines instead. This can be useful if you
 are particularly interested in a linear feature such as a river or
 coastline. However, using lines does not provide as much detail as small
-grid cells, so you must consider whether it is suitable for your needs.
+grid cells. You should consider whether it is suitable for your needs.
 It also only considers asset data that fall within a buffer distance of
 your choice.
 
 |image28|\ |image29|
+*The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
 
 1. Add your line data to the ‘lines’ folder within the ‘input’ folder.
    This is where the MESA tool reads the line data from. The training
@@ -382,12 +367,31 @@ let you know in the Log Output box.
 
 6. Reopen your Mesa QGIS project file. The newly processed lines should
    be added. If they are not, try creating a new atlas (in the same way
-   as described above)
+   as described above).
 
    |image35|
+*The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
 
+The MESA tool will divide the lines you have imported into segments and buffer them. The default is set to segment lengths of 1000m and a buffer width of 600m. You can change this if needed by following these steps. 
 
-Annex I: Data standards
+1. Click the ‘Settings’ button.
+
+|image64|
+
+2. Select ‘Edit lines’.
+
+|image65|
+
+3. A new window will open. This is where you can change the segment length and width. 
+
+|image66|
+
+4. Press the ‘Next’ button to scroll through the different lines that you imported. Change the segment length and width as needed and select ‘Save’. Below on the left, you can see what changing the segment length to 10000m and width to 5000m looks like in comparison to the default length/width on the right.  
+
+|image67|\ |image68|
+*The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.*
+
+Annex A: Data standards
 =======================
 
 Standards for asset datasets. 
@@ -396,15 +400,15 @@ Standards for asset datasets.
 File format
 ^^^^^^^^^^^
 
-Data are to be provided in a shapefile format and contain either:
+Data are to be provided in shapefile or geopackage format and contain either:
 
-- Points;
+- Points
 
-- Polylines; or
+- Lines
 
-- Polygons.
+- Polygons
 
-Understanding and documenting the key attributes of each dataset is
+It is the user’s responsibility to ensure the data are accurate. Understanding and documenting the key attributes of each dataset is
 essential. However, this process can be time-consuming. Below you can
 find a general-purpose schema that you can tailor to meet your specific
 needs.
@@ -412,276 +416,223 @@ needs.
 Attribute data
 ~~~~~~~~~~~~~~
 
-While limited attribute data are required to generate an overall
-environmental sensitivity atlas, the inclusion of attribute data
-provides additional drill-down functionality, which can improve the
-value of the environmental sensitivity atlas. Users can interrogate
-attribute data to better understand the underlying assets related to an
-area’s sensitivity.
+Only limited attribute data are required to generate an overall environmental sensitivity atlas. However, including attribute data adds drill-down functionality, which can improve the value of the atlas. Users can inspect attribute data to better understand the underlying assets related to an area’s sensitivity.
 
-For each asset type, a standard based on best practices has been
-developed. While it may not be feasible to complete every field for
-every asset, data providers should focus on including the key
-attributes.
+Here are some example data standards for different types of assets based on best practices. While it may not be feasible to complete all fields for every asset, data providers should focus on including the key attributes.
 
 Protected Areas
 ~~~~~~~~~~~~~~~
 
 Data standards for protected areas have been drawn from the minimum
 required attribute data for inclusion in the World Database of Protected
-Areas (WDPA). The requirements are outlined in Table A2.1 below, with
+Areas (WDPA). The requirements are outlined in Table A1 below, with
 more detailed descriptions available in Appendix 1 of the `WDPA User
 Manual <http://pp-import-production.s3.amazonaws.com/WDPA_Manual_1_5.pdf>`__.
 
-*Table A2.1: Description and allowed values for attributes of protected
+*Table A1. Description and allowed values for attributes of protected
 area data.*
 
-+----------+--------+-----+------------------------------------------+
-| **Field  | **     | *   | **Allowed Values**                       |
-| Name**   | Type** | *Le |                                          |
-|          |        | ngt |                                          |
-|          |        | h** |                                          |
-+==========+========+=====+==========================================+
-| PA_DEF   | Text   | 20  | **Allowed values**: 1 (meets IUCN and/or |
-|          | (S     |     | CBD PA definition); 0 (does not meet     |
-|          | tring) |     | IUCN and/or CBD PA definition.           |
-+----------+--------+-----+------------------------------------------+
-| NAME     | Text   | 254 | Name of the protected area (PA) as       |
-|          | (S     |     | provided                                 |
-|          | tring) |     |                                          |
-+----------+--------+-----+------------------------------------------+
-| O        | Text   | 254 | Name of the protected area in original   |
-| RIG_NAME | (S     |     | language                                 |
-|          | tring) |     |                                          |
-+----------+--------+-----+------------------------------------------+
-| DESIG    | Text   | 254 | Name of designation                      |
-|          | (S     |     |                                          |
-|          | tring) |     |                                          |
-+----------+--------+-----+------------------------------------------+
-| DE       | Text   | 20  | **Allowed values**: National, Regional,  |
-| SIG_TYPE | (S     |     | International, Not applicable            |
-|          | tring) |     |                                          |
-+----------+--------+-----+------------------------------------------+
-| MARINE   | Text   | 20  | **Allowed values**: 0 (100% Terrestrial  |
-|          | (S     |     | PA), 1 (Coastal: marine and terrestrial  |
-|          | tring) |     | PA), 2 (100% Marine PA)                  |
-+----------+--------+-----+------------------------------------------+
-| RE       | Number | N/A | Marine area in square kilometres         |
-| P_M_AREA | (D     |     |                                          |
-|          | ouble) |     |                                          |
-+----------+--------+-----+------------------------------------------+
-| REP_AREA | Number | N/A | Area in square kilometres                |
-|          | (D     |     |                                          |
-|          | ouble) |     |                                          |
-+----------+--------+-----+------------------------------------------+
-| STATUS   | Text   | 100 | **Allowed values**: Proposed, Inscribed, |
-|          | (S     |     | Adopted, Designated, Established.        |
-|          | tring) |     |                                          |
-+----------+--------+-----+------------------------------------------+
-| S        | Number | 12  | Year of enactment of status              |
-| TATUS_YR | (Long  |     |                                          |
-|          | In     |     |                                          |
-|          | teger) |     |                                          |
-+----------+--------+-----+------------------------------------------+
-| PAR      | Text   | 20  | **Allowed values**: SIO 3166-3 character |
-| ENT_ISO3 | (S     |     | code of country where the PA is located. |
-|          | tring) |     |                                          |
-+----------+--------+-----+------------------------------------------+
-| ISO3     | Text   | 20  | **Allowed values**: ISO3166-3 character  |
-|          | (S     |     | code of country or territory where the   |
-|          | tring) |     | PA is located.                           |
-+----------+--------+-----+------------------------------------------+
-| GOV_TYPE | Text   | 254 | **Allowed values**: Federal or national  |
-|          | (S     |     | ministry or agency, Sub-national         |
-|          | tring) |     | ministry or agency, Government-delegated |
-|          |        |     | management, Transboundary governance,    |
-|          |        |     | Collaborative governance, Joint          |
-|          |        |     | governance, Individual landowners,       |
-|          |        |     | Non-profit organisations, For-profit     |
-|          |        |     | organisations, Indigenous peoples, Local |
-|          |        |     | communities, Not Reported.               |
-+----------+--------+-----+------------------------------------------+
-| M        | Text   | 254 | Individual or group that manages the     |
-| ANG_AUTH | (S     |     | protected area                           |
-|          | tring) |     |                                          |
-+----------+--------+-----+------------------------------------------+
-| IUCN_CAT | Text   | 20  | **Allowed values**: Ia, Ib, II, III, IV, |
-|          | (S     |     | V, VI, Not Applicable, Not Assigned, Not |
-|          | tring) |     | Reported                                 |
-+----------+--------+-----+------------------------------------------+
-
++-----------------+----------+------------+------------------------------------------+
+| **Field Name**  | **Type** | **Length** | **Allowed Values**                       |
++=================+==========+============+==========================================+
+| PA_DEF          | Text     | 20         | **Allowed values**: 1 (meets IUCN and/or |
+|                 | (String) |            | CBD PA definition); 0 (does not meet     |
+|                 |          |            | IUCN and/or CBD PA definition)           |
++-----------------+----------+------------+------------------------------------------+
+| NAME            | Text     | 254        | Name of the protected area (PA) as       |
+|                 | (String) |            | provided                                 |
++-----------------+----------+------------+------------------------------------------+
+| ORIG_NAME       | Text     | 254        | Name of the protected area in original   |
+|                 | (String) |            | language                                 |
++-----------------+----------+------------+------------------------------------------+
+| DESIG           | Text     | 254        | Name of designation                      |
+|                 | (String) |            |                                          |
++-----------------+----------+------------+------------------------------------------+
+| DESIG_TYPE      | Text     | 20         | **Allowed values**: National, Regional,  |
+|                 | (String) |            | International, Not applicable            |
++-----------------+----------+------------+------------------------------------------+
+| MARINE          | Text     | 20         | **Allowed values**: 0 (100% Terrestrial  |
+|                 | (String) |            | PA), 1 (Coastal: marine and terrestrial  |
+|                 |          |            | PA), 2 (100% Marine PA)                  |
++-----------------+----------+------------+------------------------------------------+
+| REP_M_AREA      | Number   | N/A        | Marine area in square kilometres         |
+|                 | (Double) |            |                                          |
++-----------------+----------+------------+------------------------------------------+
+| REP_AREA        | Number   | N/A        | Area in square kilometres                |
+|                 | (Double) |            |                                          |
++-----------------+----------+------------+------------------------------------------+
+| STATUS          | Text     | 100        | **Allowed values**: Proposed, Inscribed, |
+|                 | (String) |            | Adopted, Designated, Established         |
++-----------------+----------+------------+------------------------------------------+
+| STATUS_YR       | Number   | 12         | Year of enactment of status              |
+|                 | (Long    |            |                                          |
+|                 | Integer) |            |                                          |
++-----------------+----------+------------+------------------------------------------+
+| PARENT_ISO3     | Text     | 20         | **Allowed values**: ISO 3166-3 character |
+|                 | (String) |            | code of country where the PA is located. |
++-----------------+----------+------------+------------------------------------------+
+| ISO3            | Text     | 20         | **Allowed values**: ISO3166-3 character  |
+|                 | (String) |            | code of country or territory where the   |
+|                 |          |            | PA is located                            |
++-----------------+----------+------------+------------------------------------------+
+| GOV_TYPE        | Text     | 254        | **Allowed values**: Federal or national  |
+|                 | (String) |            | ministry or agency, Sub-national         |
+|                 |          |            | ministry or agency, Government-delegated|
+|                 |          |            | management, Transboundary governance,    |
+|                 |          |            | Collaborative governance, Joint          |
+|                 |          |            | governance, Individual landowners,       |
+|                 |          |            | Non-profit organisations, For-profit     |
+|                 |          |            | organisations, Indigenous peoples, Local|
+|                 |          |            | communities, Not Reported                |
++-----------------+----------+------------+------------------------------------------+
+| MANG_AUTH       | Text     | 254        | Individual or group that manages the     |
+|                 | (String) |            | protected area                           |
++-----------------+----------+------------+------------------------------------------+
+| IUCN_CAT        | Text     | 20         | **Allowed values**: Ia, Ib, II, III, IV, |
+|                 | (String) |            | V, VI, Not Applicable, Not Assigned, Not |
+|                 |          |            | Reported                                 |
++-----------------+----------+------------+------------------------------------------+
 Other Biodiversity Designations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Data standards for Other Biodiversity Designations are based around the
-proposed Key Biodiversity Area data standards (Table A2.2). However,
+proposed Key Biodiversity Area data standards (Table A2). However,
 environmental sensitivity mapping does not require the same level of
 details, and some fields are therefore omitted.
 
-*Table A2.2: Description and allowed values for attributes of Other
+*Table A2. Description and allowed values for attributes of Other
 Biodiversity Designations data.*
 
-+----------+------------+-----+--------------------------------------+
-| **Field  | **Type**   | *   | **Allowed Values**                   |
-| Name**   |            | *Le |                                      |
-|          |            | ngt |                                      |
-|          |            | h** |                                      |
-+==========+============+=====+======================================+
-| NAME     | Text       | 254 | Name of the area as provided         |
-|          | (String)   |     |                                      |
-+----------+------------+-----+--------------------------------------+
-| O        | Text       | 254 | Name of the area in original         |
-| RIG_NAME | (String)   |     | language                             |
-+----------+------------+-----+--------------------------------------+
-| DESIG    | Text       | 20  | **Allowed values**: KBA, AZE         |
-|          | (String)   |     |                                      |
-+----------+------------+-----+--------------------------------------+
-| CRIT_MET | Text       | 20  | **Allowed values**: AZE, A1, A2, B1, |
-|          | (String)   |     | B2, B3, B4, C, D1, D2, D3, E         |
-+----------+------------+-----+--------------------------------------+
-| TRIGGER  | Text       | 254 | Name of the species, ecosystem type, |
-|          | (String)   |     | or biological process triggering     |
-|          |            |     | designation.                         |
-+----------+------------+-----+--------------------------------------+
-| MARINE   | Text       | 20  | **Allowed values**: 0 (100%          |
-|          | (String)   |     | Terrestrial), 1 (Coastal: marine and |
-|          |            |     | terrestrial), 2 (100% Marine)        |
-+----------+------------+-----+--------------------------------------+
-| RE       | Number     | N/A | Marine area in square kilometres     |
-| P_M_AREA | (Double)   |     |                                      |
-+----------+------------+-----+--------------------------------------+
-| REP_AREA | Number     | N/A | Area in square kilometres            |
-|          | (Double)   |     |                                      |
-+----------+------------+-----+--------------------------------------+
-| YEAR     | Number     | 12  | Year of designation                  |
-|          | (Long      |     |                                      |
-|          | Integer)   |     |                                      |
-+----------+------------+-----+--------------------------------------+
-| PAR      | Text       | 20  | **Allowed values**: SIO 3166-3       |
-| ENT_ISO3 | (String)   |     | character code of country where the  |
-|          |            |     | PA is located.                       |
-+----------+------------+-----+--------------------------------------+
-| ISO3     | Text       | 20  | **Allowed values**: ISO3166-3        |
-|          | (String)   |     | character code of country or         |
-|          |            |     | territory where the PA is located.   |
-+----------+------------+-----+--------------------------------------+
-
++---------------------+------------+------------+---------------------------------------------------------+
+| **Field Name**      | **Type**   | **Length** | **Allowed Values**                                      |
++=====================+============+============+=========================================================+
+| NAME                | Text       | 254        | Name of the area as provided                            |
+|                     | (String)   |            |                                                         |
++---------------------+------------+------------+---------------------------------------------------------+
+| ORIG_NAME           | Text       | 254        | Name of the area in original                            |
+|                     | (String)   |            | language                                                |
++---------------------+------------+------------+---------------------------------------------------------+
+| DESIG               | Text       | 20         | **Allowed values**: KBA, AZE                            |
+|                     | (String)   |            |                                                         |
++---------------------+------------+------------+---------------------------------------------------------+
+| CRIT_MET            | Text       | 20         | **Allowed values**: AZE, A1, A2, B1, B2, B3, B4, C, D1, |
+|                     | (String)   |            | D2, D3, E                                               |
++---------------------+------------+------------+---------------------------------------------------------+
+| TRIGGER             | Text       | 254        | Name of the species, ecosystem type, or biological      |
+|                     | (String)   |            | process triggering designation                          |
++---------------------+------------+------------+---------------------------------------------------------+
+| MARINE              | Text       | 20         | **Allowed values**: 0 (100% Terrestrial), 1 (Coastal:   |
+|                     | (String)   |            | marine and terrestrial), 2 (100% Marine)                |
++---------------------+------------+------------+---------------------------------------------------------+
+| REP_M_AREA          | Number     | N/A        | Marine area in square kilometres                        |
+|                     | (Double)   |            |                                                         |
++---------------------+------------+------------+---------------------------------------------------------+
+| REP_AREA            | Number     | N/A        | Area in square kilometres                               |
+|                     | (Double)   |            |                                                         |
++---------------------+------------+------------+---------------------------------------------------------+
+| YEAR                | Number     | 12         | Year of designation                                     |
+|                     | (Long      |            |                                                         |
+|                     | Integer)   |            |                                                         |
++---------------------+------------+------------+---------------------------------------------------------+
+| PARENT_ISO3         | Text       | 20         | **Allowed values**: SIO 3166-3 character code of        |
+|                     | (String)   |            | country where the PA is located                         |
++---------------------+------------+------------+---------------------------------------------------------+
+| ISO3                | Text       | 20         | **Allowed values**: ISO3166-3 character code of         |
+|                     | (String)   |            | country or territory where the PA is located           |
++---------------------+------------+------------+---------------------------------------------------------+
 Habitats
 ~~~~~~~~
 
 Habitat datasets are likely to be more variable in nature than Protected
 Areas and Other Biodiversity Designations, reflecting a level of
 national and local specificity. As a result, the data standards (Table
-A2.3) are less prescriptive.
+A3) are less prescriptive.
 
-*Table A2.3: Description and allowed values for attributes of habitat
+*Table A3: Description and allowed values for attributes of habitat
 data.*
 
-+----------+----------+-----+----------------------------------------+
-| **Field  | **Type** | *   | **Allowed Values**                     |
-| Name**   |          | *Le |                                        |
-|          |          | ngt |                                        |
-|          |          | h** |                                        |
-+==========+==========+=====+========================================+
-| TYPE     | Text     | 20  | Name of habitat type                   |
-|          | (String) |     |                                        |
-+----------+----------+-----+----------------------------------------+
-| MARINE   | Text     | 20  | **Allowed values**: 0 (100%            |
-|          | (String) |     | Terrestrial), 1 (Coastal: marine and   |
-|          |          |     | terrestrial), 2 (100% Marine)          |
-+----------+----------+-----+----------------------------------------+
-| RE       | Number   | N/A | Marine area in square kilometres       |
-| P_M_AREA | (Double) |     |                                        |
-+----------+----------+-----+----------------------------------------+
-| REP_AREA | Number   | N/A | Area in square kilometres              |
-|          | (Double) |     |                                        |
-+----------+----------+-----+----------------------------------------+
-| PAR      | Text     | 20  | **Allowed values**: ISO 3166-3         |
-| ENT_ISO3 | (String) |     | character code of country where the PA |
-|          |          |     | is located.                            |
-+----------+----------+-----+----------------------------------------+
-| ISO3     | Text     | 20  | **Allowed values**: ISO3166-3          |
-|          | (String) |     | character code of country or territory |
-|          |          |     | where the PA is located.               |
-+----------+----------+-----+----------------------------------------+
-| OTHER    | Text     | 254 | Additional relevant information        |
-|          | (String) |     | specific to the habitat                |
-+----------+----------+-----+----------------------------------------+
-
++-----------------+----------+------------+----------------------------------------+
+| **Field Name**  | **Type** | **Length** | **Allowed Values**                     |
++=================+==========+============+========================================+
+| TYPE            | Text     | 20         | Name of habitat type                   |
+|                 | (String) |            |                                        |
++-----------------+----------+------------+----------------------------------------+
+| MARINE          | Text     | 20         | **Allowed values**: 0 (100%            |
+|                 | (String) |            | Terrestrial), 1 (Coastal: marine and   |
+|                 |          |            | terrestrial), 2 (100% Marine)          |
++-----------------+----------+------------+----------------------------------------+
+| REP_M_AREA      | Number   | N/A        | Marine area in square kilometres       |
+|                 | (Double) |            |                                        |
++-----------------+----------+------------+----------------------------------------+
+| REP_AREA        | Number   | N/A        | Area in square kilometres              |
+|                 | (Double) |            |                                        |
++-----------------+----------+------------+----------------------------------------+
+| PARENT_ISO3     | Text     | 20         | **Allowed values**: ISO 3166-3         |
+|                 | (String) |            | character code of country where the PA |
+|                 |          |            | is located                             |
++-----------------+----------+------------+----------------------------------------+
+| ISO3            | Text     | 20         | **Allowed values**: ISO3166-3          |
+|                 | (String) |            | character code of country or territory |
+|                 |          |            | where the PA is located                |
++-----------------+----------+------------+----------------------------------------+
+| OTHER           | Text     | 254        | Additional relevant information        |
+|                 | (String) |            | specific to the habitat                |
++-----------------+----------+------------+----------------------------------------+
 Species
 ~~~~~~~
 
-Species datasets vary depending on the level of study that has been
-conducted. It is assumed that for species with spatial datasets
-available, sufficient study has been carried out to complete each of the
-attributes in Table A2.4 below, however it is possible that some may be
-not applicable or unknown.
+Species datasets vary depending upon the level of study that has been conducted. It is assumed that for species with spatial datasets available, sufficient study has been carried out to complete each of the attributes in Table A4 below, however it is possible that some may not be applicable or known.
 
-*Table A2.4: Description and allowed values for attributes of species
+*Table A4: Description and allowed values for attributes of species
 data.*
 
-+-----------+---------+-----+-----------------------------------------+
-| **Field   | *       | *   | **Allowed Values**                      |
-| Name**    | *Type** | *Le |                                         |
-|           |         | ngt |                                         |
-|           |         | h** |                                         |
-+===========+=========+=====+=========================================+
-| SPECIES   | Text    | 100 | Name of species                         |
-|           | (       |     |                                         |
-|           | String) |     |                                         |
-+-----------+---------+-----+-----------------------------------------+
-| IU        | Text    | 20  | **Allowed values**: CR, EN, VU, NT, LC, |
-| CN_STATUS | (       |     | DD, NE                                  |
-|           | String) |     |                                         |
-+-----------+---------+-----+-----------------------------------------+
-| N         | Text    | 100 | Status under national assessment or     |
-| AT_STATUS | (       |     | legislation                             |
-|           | String) |     |                                         |
-+-----------+---------+-----+-----------------------------------------+
-| TYPE      | Text    | 20  | **Allowed values**: F (Feeding Ground), |
-|           | (       |     | B (Breeding Ground), M (Migratory       |
-|           | String) |     | Route), O (Multiple use or Other)       |
-+-----------+---------+-----+-----------------------------------------+
-| HABITAT   | Text    | 254 | Species habitat preference if known.    |
-|           | (       |     |                                         |
-|           | String) |     |                                         |
-+-----------+---------+-----+-----------------------------------------+
-| MARINE    | Text    | 20  | **Allowed values**: 0 (100%             |
-|           | (       |     | Terrestrial), 1 (Coastal: marine and    |
-|           | String) |     | terrestrial), 2 (100% Marine)           |
-+-----------+---------+-----+-----------------------------------------+
-| R         | Number  | N/A | Marine area in square kilometres        |
-| EP_M_AREA | (       |     |                                         |
-|           | Double) |     |                                         |
-+-----------+---------+-----+-----------------------------------------+
-| REP_AREA  | Number  | N/A | Area in square kilometres               |
-|           | (       |     |                                         |
-|           | Double) |     |                                         |
-+-----------+---------+-----+-----------------------------------------+
-| PA        | Text    | 20  | **Allowed values**: SIO 3166-3          |
-| RENT_ISO3 | (       |     | character code of country where the PA  |
-|           | String) |     | is located.                             |
-+-----------+---------+-----+-----------------------------------------+
-| ISO3      | Text    | 20  | **Allowed values**: ISO3166-3 character |
-|           | (       |     | code of country or territory where the  |
-|           | String) |     | PA is located.                          |
-+-----------+---------+-----+-----------------------------------------+
-| OTHER     | Text    | 254 | Additional relevant information         |
-|           | (       |     | specific to the species                 |
-|           | String) |     |                                         |
-+-----------+---------+-----+-----------------------------------------+
++-----------------+------------+=============+-----------------------------------------+
+| **Field Name**  | **Type**   | **Length**  | **Allowed Values**                      |
++=================+============+=============+=========================================+
+| SPECIES         | Text       | 100         | Name of species                         |
+|                 | (String)   |             |                                         |
++-----------------+------------+=============+-----------------------------------------+
+| IUCN_STATUS     | Text       | 20          | **Allowed values**: CR, EN, VU, NT, LC, |
+|                 | (String)   |             | DD, NE                                  |
++-----------------+------------+=============+-----------------------------------------+
+| NAT_STATUS      | Text       | 100         | Status under national assessment or     |
+|                 | (String)   |             | legislation                             |
++-----------------+------------+=============+-----------------------------------------+
+| TYPE            | Text       | 20          | **Allowed values**: F (Feeding Ground), |
+|                 | (String)   |             | B (Breeding Ground), M (Migratory       |
+|                 |            |             | Route), O (Multiple use or Other)       |
++-----------------+------------+=============+-----------------------------------------+
+| HABITAT         | Text       | 254         | Species habitat preference if known.    |
+|                 | (String)   |             |                                         |
++-----------------+------------+=============+-----------------------------------------+
+| MARINE          | Text       | 20          | **Allowed values**: 0 (100%             |
+|                 | (String)   |             | Terrestrial), 1 (Coastal: marine and    |
+|                 |            |             | terrestrial), 2 (100% Marine)           |
++-----------------+------------+=============+-----------------------------------------+
+| REP_M_AREA      | Number     | N/A         | Marine area in square kilometres        |
+|                 | (Double)   |             |                                         |
++-----------------+------------+=============+-----------------------------------------+
+| REP_AREA        | Number     | N/A         | Area in square kilometres               |
+|                 | (Double)   |             |                                         |
++-----------------+------------+=============+-----------------------------------------+
+| PARENT_ISO3     | Text       | 20          | **Allowed values**: SIO 3166-3          |
+|                 | (String)   |             | character code of country where the PA  |
+|                 |            |             | is located.                             |
++-----------------+------------+=============+-----------------------------------------+
+| ISO3            | Text       | 20          | **Allowed values**: ISO3166-3 character |
+|                 | (String)   |             | code of country or territory where the  |
+|                 |            |             | PA is located.                          |
++-----------------+------------+=============+-----------------------------------------+
+| OTHER           | Text       | 254         | Additional relevant information         |
+|                 | (String)   |             | specific to the species                 |
++-----------------+------------+=============+-----------------------------------------+
 
 Metadata standards
 ------------------
 
-In addition to data relating to individual assets, it is important for
-asset datasets to have metadata associated with them that enables clear
-understanding of the content, source and age of the dataset. Maintaining
-metadata in a standard format, such as in Table A2.5 below, helps users
-and data managers to manage datasets efficiently and easily identify
-datasets that require updating.
+In addition to data relating to individual assets, it is important for asset datasets to have metadata associated with them. This enables clear understanding of the content, source and age of the dataset. Maintaining metadata in a standard format, such as in Table A5 below, helps users and data managers efficiently manage datasets and easily identify those that need updating. 
 
-*Table A2.5: Description and allowed values for attributes of species.*
+*Table A5: Description and allowed values for attributes of species.*
 
 +--------------------+-------------------------------------------------+
 | **Field**          | **Allowed Values**                              |
@@ -700,7 +651,7 @@ datasets that require updating.
 |                    |                                                 |
 |                    | 3. Point                                        |
 +--------------------+-------------------------------------------------+
-| Resolution         |                                                 |
+| Resolution         | Resolution of the dataset                       |
 +--------------------+-------------------------------------------------+
 | Last Updated       | Year of last update                             |
 +--------------------+-------------------------------------------------+
@@ -746,19 +697,20 @@ datasets that require updating.
 |                    |                                                 |
 |                    | 5. Public                                       |
 +--------------------+-------------------------------------------------+
-| Person Responsible | Name & email of the point of contact for the    |
+| Person Responsible | Name and email of the point of contact for the  |
 |                    | data set                                        |
 +--------------------+-------------------------------------------------+
 
-Annex II: Tables
+Annex B: Tables
 ================
 
 mesa — tbl_asset layer\_[layer number]
 --------------------------------------
 
-List of the input asset data, with one table per input asset layer.
+List of the input asset data, with one table per input asset layer (Table B1).
 These datasets are not added to the output geopackage file.
 
+*Table B1. Description of attributes of mesa – tbl_asset layer_[layer number]*
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -783,9 +735,10 @@ mesa — tbl_asset_group
 
 |image36| 
 
-Table listing metadata from each asset and grid level involved in the
+Table B2 lists from each asset and grid level involved in the
 process. The bounding box for each layer is extracted as its geometry.
 
+*Table B2. Description of attributes of mesa — tbl_asset_group*
 +-----------------------------------+----------------------------------+
 | **Attribute name**                | **Description**                  |
 +===================================+==================================+
@@ -820,9 +773,10 @@ process. The bounding box for each layer is extracted as its geometry.
 mesa — tbl_asset_object
 -----------------------
 
-This table contains a list of all spatial objects from the input asset
+Table B3 contains a list of all spatial objects from the input asset
 layers.
 
+*Table B3. Description of attributes of mesa — tbl_asset_object*
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -842,15 +796,15 @@ layers.
 |                         | asset object                               |
 +-------------------------+--------------------------------------------+
 
-
 mesa — tbl_atlas
 ---------------------------
 
 |image37|
 
-This table contains geometries used to create an atlas in the QGIS
+Table B4 contains geometries used to create an atlas in the QGIS
 project file.
 
+*Table B4. Description of attributes of mesa — tbl_atlas*
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -878,11 +832,11 @@ mesa — tbl_flat
 
 |image38|
 
-This table contains all intersected geocodes at all levels. Data on
+Table B5 contains all intersected geocodes at all levels. Data on
 importance, susceptibility and sensitivity (code and value) have been
 added.
 
-
+*Table B5. Description of attributes of mesa — tbl_flat*
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -939,9 +893,10 @@ mesa — tbl_geocode_group
 ------------------------------------
 |image39|
 
-Table containing all the unique geocode group names and ID. The bounding
+Table B6 contains all the unique geocode group names and ID. The bounding
 box for each group is extracted as its geometry.
 
+*Table B6. Description of attributes of mesa — tbl_geocode_group*
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -961,9 +916,10 @@ mesa — tbl_geocode_object
 
 |image40|
 
-Table containing all the processed geocodes that were placed in the
+Table B7 contains all the processed geocodes that were placed in the
 geocode folder.
 
+*Table B7. Description of attributes of mesa — tbl_geocode_object*
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -981,9 +937,10 @@ mesa — tbl_stacked
 
 |image41|
 
-This table contains all the interaction data between each geocode cell
+Table B8 contains all the interaction data between each geocode cell
 and asset. Each row shows a geocode cell and asset interaction.
 
+*Table B8. Description of attributes of mesa — tbl_stacked*
 +-------------------------+--------------------------------------------+
 | **Attribute name**      | **Description**                            |
 +=========================+============================================+
@@ -1033,9 +990,10 @@ and asset. Each row shows a geocode cell and asset interaction.
 mesa — tbl_asset_group_issue
 ----------------------------
 
-Table containing original layers that need to be fixed by the user. All
+Table B9 contains original layers that need to be fixed by the user. All
 the elements in this table have been skipped in the calculations.
 
+*Table B9. Description of attributes of mesa — tbl_asset_group_issue*
 +------------------------+---------------------------------------------+
 | **Attribute name**     | **Description**                             |
 +========================+=============================================+
@@ -1047,7 +1005,7 @@ the elements in this table have been skipped in the calculations.
 | severity               | Severity level of the identified problem    |
 +------------------------+---------------------------------------------+
 
-Annex III: Folder structure
+Annex C: Folder structure
 ===========================
 
 The MESA folder structure:
