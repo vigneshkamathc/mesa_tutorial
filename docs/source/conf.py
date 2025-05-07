@@ -3,11 +3,11 @@
 # -- Project information
 
 project =  'MESA'
-author = '© UNEP-WCMC, 2024 ................. Author: UNEP-WCMC'
-copyright = '© UNEP-WCMC, 2024'
+author = '© UNEP-WCMC, 2025 ................. Author: UNEP-WCMC'
+copyright = '© UNEP-WCMC, 2025'
 
 release = 'Beta 0.1'
-version = '0.1.0'
+version = '1.0'
 
 today_fmt = '%B %d, %Y' 
 
